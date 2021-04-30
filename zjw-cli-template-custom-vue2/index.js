@@ -26,7 +26,6 @@ async function ejsRender(options) {
                                 if (err) {
                                     reject1(err);
                                 } else {
-                                    console.log(result);
                                     fse.writeFileSync(filePath, result);
                                     resolve1(result);
                                 }
